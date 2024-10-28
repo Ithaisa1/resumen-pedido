@@ -1,0 +1,137 @@
+:root {
+    --dark_blue: hsl(223, 47%, 23%);
+    --pale_blue: hsl(225, 100%, 94%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --bright_blue: hsl(245, 75%, 52%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.tarjeta {
+    box-shadow: 0px 25px 50px var(--pale_blue);
+    border-radius: 2rem;
+    display: inline-block;
+    max-width: 28.2rem;
+    overflow: hidden;
+    text-align: center;
+    border: solid 1px lightgray;
+}
+
+.tarjeta img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.tarjeta .contenido {
+    padding: 40px;
+}
+
+.tarjeta h2 {
+    font-size: 30px;
+    color: var(--dark_blue);
+    padding: 0 0 20px;
+}
+
+.tarjeta .instrucciones {
+    color: var(--desaturated_blue);
+}
+
+.tarjeta .plan_contenedor {
+    background-color: var(--very_pale_blue);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+}
+
+span.icono_musica {
+    background-color: var(--pale_blue);
+    border-radius: 60%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.info_plan {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.tarjeta span.icono_musica img {
+    width: 20px;
+}
+
+.tipo_plan {
+    font-weight: 900;
+    color: var(--dark_blue);
+    margin-left: 25px;
+}
+
+.per_year {
+    margin-left: 20px;
+    color: var(--desaturated_blue);
+}
+
+.tarjeta button {
+    background-color: var(--dark_blue);
+    color: var(--very_pale_blue);
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 25px 20px var(--pale_blue);
+    margin-bottom: 40px;
+}
+
+.tarjeta button:hover {
+    background-color: var(--bright_blue);
+    color: var(--very_pale_blue);
+    cursor: pointer;
+}
+
+.tarjeta a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.cancelar {
+    color: var(--desaturated_blue);
+    font-weight: 700;
+}
+
+.cancelar:hover {
+    cursor: pointer;
+}
